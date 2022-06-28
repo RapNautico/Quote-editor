@@ -1,0 +1,6 @@
+<% if quote.errors.any? %>
+  <div class="error-message">
+    <%= form_error_notification(quote) %>
+    <%= quote.errors.full_messages.to_sentence.capitalize %>
+  </div>
+<% end %>
